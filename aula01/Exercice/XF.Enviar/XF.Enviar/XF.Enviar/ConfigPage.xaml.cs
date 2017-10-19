@@ -21,7 +21,7 @@ namespace XF.Enviar
                 
         private void swEmail_OnChanged(object sender, ToggledEventArgs e)
         {
-            if (swEmail.IsEnabled) {
+            if (swEmail.On) {
                 txtemail.IsEnabled = true;
                 
             }

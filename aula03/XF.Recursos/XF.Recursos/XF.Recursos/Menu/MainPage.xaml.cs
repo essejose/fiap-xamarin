@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 using System.Collections.ObjectModel;
 using XF.Recursos.Global;
 
+
 namespace XF.Recursos.Menu {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : IMasterDetailPageController {

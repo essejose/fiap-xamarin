@@ -53,6 +53,10 @@
     <Compile Include="Global\EntryNumerico.cs" />
     <Compile Include="Global\MessagingViewModel.cs" />
     <Compile Include="Global\OpcoesMenu.cs" />
+    <Compile Include="GPS\CoordenadaView.xaml.cs">
+      <DependentUpon>CoordenadaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GPS\ILocalizacao.cs" />
     <Compile Include="Lista\ClassView.xaml.cs">
       <DependentUpon>ClassView.xaml</DependentUpon>
     </Compile>
@@ -241,6 +245,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Lista\ListaEtiqueta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GPS\CoordenadaView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -51,11 +51,11 @@
       <DependentUpon>TriggersView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Global\EntryNumerico.cs" />
+    <Compile Include="Global\MessagingViewModel.cs" />
     <Compile Include="Global\OpcoesMenu.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Global\MessagingViewModel.cs" />
     <Compile Include="Menu\ConfigView.xaml.cs">
       <DependentUpon>ConfigView.xaml</DependentUpon>
     </Compile>

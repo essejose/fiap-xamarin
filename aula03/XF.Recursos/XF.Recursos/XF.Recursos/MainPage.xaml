@@ -14,18 +14,11 @@
                 <Button x:Name="btnTriggers" Text="Estilo event triggres" Clicked="btnTriggers_Clicked"></Button>
                 <Label FontSize="20" Text="TemplatedPage"></Label>
                 <Button x:Name="btnTemplate" Text="TemplatedPage" Clicked="btnTemplate_Clicked"></Button>
-                
                 <Label FontSize="20" Text="Passar parametro"></Label>
                 <Button x:Name="btnHome" Text="Home" Clicked="btnHome_Clicked"></Button>
-
                 <Button x:Name="btnMC" Text="Messaging Center" Clicked="btnMC_Clicked"></Button>
-
-                <Button x:Name="btnMestre" Text="Menu" Clicked="btnMestre_Clicked"></Button>
-                <Label FontSize="20" Text="Custom Control"></Label>
-
                 <Label FontSize="20" Text="Master/Details"></Label>
                 <Button x:Name="btnMestre" Text="Menu" Clicked="btnMestre_Clicked"></Button>
-
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

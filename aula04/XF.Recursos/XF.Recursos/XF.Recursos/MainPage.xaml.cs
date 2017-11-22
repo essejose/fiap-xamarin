@@ -74,5 +74,10 @@ namespace XF.Recursos
             await Navigation.PushAsync(new GPS.CoordenadaView());
         }
 
+
+        private async void btnLigar_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new API.PhoneView());
+        }
+
     }
 }

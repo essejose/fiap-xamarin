@@ -45,6 +45,10 @@
 
                 <Button x:Name="btnEditor" Text="Editor" Clicked="btnEditor_Clicked"></Button>
 
+                <Button x:Name="btnStepper" Text="Stepper Control" Clicked="btnStepper_Clicked"></Button>
+
+                
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

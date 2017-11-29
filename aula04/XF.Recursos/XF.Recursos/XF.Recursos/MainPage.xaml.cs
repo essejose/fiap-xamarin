@@ -100,6 +100,10 @@ namespace XF.Recursos
             await Navigation.PushAsync(new Controles.EditorView());
         }
 
+        private async void btnStepper_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new Controles.StepperView());
+        }
+
 
     }
 }

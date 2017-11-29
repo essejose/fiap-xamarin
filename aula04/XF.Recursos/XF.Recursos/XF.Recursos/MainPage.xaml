@@ -47,8 +47,10 @@
 
                 <Button x:Name="btnStepper" Text="Stepper Control" Clicked="btnStepper_Clicked"></Button>
 
-                
-                
+                <Label FontSize="20" Text="WebView - Browser"></Label>
+                <Button x:Name="btnWeb" Text="Web" Clicked="btnWeb_Clicked"></Button>
+
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

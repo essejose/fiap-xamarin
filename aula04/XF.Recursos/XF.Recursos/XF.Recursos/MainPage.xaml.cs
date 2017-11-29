@@ -104,6 +104,10 @@ namespace XF.Recursos
             await Navigation.PushAsync(new Controles.StepperView());
         }
 
+        private async void btnWeb_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new Browser.BrowserView());
+        }
+
 
     }
 }

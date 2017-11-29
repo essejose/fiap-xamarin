@@ -98,6 +98,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FiapBoxViewRenderer.cs" />
+    <Compile Include="FiapButtonRenderer.cs" />
     <Compile Include="GeolocationAndroid.cs" />
     <Compile Include="Ligar_Android.cs" />
     <Compile Include="MainActivity.cs" />

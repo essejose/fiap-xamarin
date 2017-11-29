@@ -109,5 +109,12 @@ namespace XF.Recursos
         }
 
 
+        private async void btnCustom_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new CustomControl.CustomView());
+        }
+
+
+
+
     }
 }

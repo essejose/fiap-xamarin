@@ -64,6 +64,10 @@
     <Compile Include="Controles\StepperView.xaml.cs">
       <DependentUpon>StepperView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\CustomView.xaml.cs">
+      <DependentUpon>CustomView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\FiapCustom.cs" />
     <Compile Include="Estilo\DinamicoView.xaml.cs">
       <DependentUpon>DinamicoView.xaml</DependentUpon>
     </Compile>
@@ -323,7 +327,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControl\CustomView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Browser\BrowserView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

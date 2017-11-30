@@ -6,7 +6,7 @@
     
     <ContentPage.Content>
         <StackLayout Padding="5">
-            <local:FiapButton Text="Clique aqui" TextColor="Blue" Clicked="FiapButton_Clicked" />
+            <local:FiapButton Texto= "Clique aqui" TextColor="Blue" Clicked="FiapButton_Clicked" />
 
             <Label Text="Teste COR RGB" 
                    TextColor="{local:ColorFromRGBExtension Vermelho=255, Verde=20, Azul=38}"

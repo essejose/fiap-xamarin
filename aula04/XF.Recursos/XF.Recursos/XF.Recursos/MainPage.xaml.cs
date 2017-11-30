@@ -113,7 +113,9 @@ namespace XF.Recursos
             await Navigation.PushAsync(new CustomControl.CustomView());
         }
 
-
+        private async void btnTestCloud_Clicked(object sender, EventArgs e) {
+            await Navigation.PushAsync(new TestCloud.TestCloudView());
+        }
 
 
     }

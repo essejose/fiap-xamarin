@@ -7,6 +7,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+
+                <Label FontSize="20" Text="Xamarin Test-Cloud"></Label>
+                <Button x:Name="btnTestCloud" Text="Test-Cloud" Clicked="btnTestCloud_Clicked"></Button>
+                
+                
                 <Label FontSize="20" Text="Style Resources"></Label>
                 <Button x:Name="btnSimples" Text="Estilo padrão" Clicked="btnSimples_Clicked"></Button>
                 <Button x:Name="btnGlobal" Text="Estilo Global" Clicked="btnGlobal_Clicked"></Button>

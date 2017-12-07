@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="c96328fc-3594-402d-9369-5238a680d0b3"
-    Publisher="CN=Administrator"
+    Name="3aa9a267-8fe7-40b7-8e37-f0e7de536312"
+    Publisher="CN=flavi"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="c96328fc-3594-402d-9369-5238a680d0b3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="3aa9a267-8fe7-40b7-8e37-f0e7de536312" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>XF.Mapas.UWP</DisplayName>
-    <PublisherDisplayName>Administrator</PublisherDisplayName>
+    <PublisherDisplayName>flavi</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

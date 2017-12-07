@@ -13,9 +13,12 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace XF.Mapas.UWP {
-    public sealed partial class MainPage {
-        public MainPage() {
+namespace XF.Mapas.UWP
+{
+    public sealed partial class MainPage
+    {
+        public MainPage()
+        {
             this.InitializeComponent();
 
             LoadApplication(new XF.Mapas.App());

@@ -6,26 +6,31 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XF.Mapas.App_Code;
 
-using XF.Mapas.App_code;
-
-namespace XF.Mapas.View {
+namespace XF.Mapas.View
+{
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : MasterDetailPage {
-        public MainPage() {
+    public partial class MainPage : MasterDetailPage
+    {
+        public MainPage()
+        {
             InitializeComponent();
 
             menuPage.ListView.ItemSelected += ListView_ItemSelected;
         }
 
-        protected override void OnAppearing() {
+        protected override void OnAppearing()
+        {
             NavigationPage.SetHasNavigationBar(this, false);
             base.OnAppearing();
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e) {
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
             var item = e.SelectedItem as ListaMenu;
-            if (item != null) {
+            if (item != null)
+            {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
                 menuPage.ListView.SelectedItem = null;
                 IsPresented = false;

@@ -27,14 +27,29 @@ namespace fiapworkshopdobemjose
                 buttonsPanel.Children.Add(syncButton);
             }
         }
-
-        protected override async void OnAppearing()
-        {
+         
+         #region Authenticator
+        bool authenticated = false;
+        protected override async void OnAppearing() {
             base.OnAppearing();
 
-            // Set syncItems to true in order to synchronize the data on startup when running in offline mode
-            await RefreshItems(true, syncItems: true);
+            if (authenticated == true) {
+                await RefreshItems(true, syncItems: true);
+
+                this.loginButton.IsVisible = false;
+            }
         }
+
+        async void loginButton_Clicked(object sender, EventArgs args) {
+            if (App.Authenticator != null)
+                authenticated = await App.Authenticator.Authenticate();
+
+            if (authenticated == true)
+                await RefreshItems(true, syncItems: false);
+        }
+
+        #endregion
+
 
         // Data methods
         async Task AddItem(TodoItem item)
